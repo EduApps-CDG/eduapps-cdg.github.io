@@ -43,6 +43,10 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '627111001428576');
   fbq('track', 'PageView');
+  var __response;
+  FB.getLoginStatus(function(__response) {
+    statusChangeCallback(__response);
+});
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=627111001428576&ev=PageView&noscript=1"
@@ -94,6 +98,10 @@
     <div class="main">
         <center>
             Please see our <a href="/projects">projects</a>
+		  <fb:login-button 
+			scope="public_profile,email"
+			onlogin="EduApps.LoginFB()">
+		  </fb:login-button>
 		  <div class="fb-like" data-share="true" data-width="450" data-colorscheme="dark" data-show-faces="true"></div>
             <div id="app">
                 <a id="app.name">HTML-OS</a>
@@ -104,5 +112,6 @@
 			<div class="fb-comments" data-href="https://eduapps-cdg.github.io" data-colorscheme="dark" data-order-by="time" data-width="50%" data-numposts="10"></div>
         </center>
     </div>
+	<script src="/js/eduapps.js"></script>
 </body>
 </html>
