@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<html><head>
   <!--SCHEMA-->
   <script type="application/ld+json">
   [{
@@ -81,10 +79,10 @@
   <meta name="twitter:title" content="EduApps Projects">
   <meta name="og:description" content="EduApps is a company that makes Games and Game Making Tools.">
   <meta name="twitter:description" content="EduApps is a company that makes Games and Game Making Tools.">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:creator" content="@EduAppsCDG" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@EduAppsCDG">
   <meta property="og:image" content="https://eduapps-cdg.github.io/google/icon.png">
-  <meta property="og:url" content="https://eduapps-cdg.github.io" >
+  <meta property="og:url" content="https://eduapps-cdg.github.io">
   <meta name="fb:app_id" content="564858804296125">
 
   <title>EduApps</title>
@@ -93,9 +91,9 @@
   <!--LINK-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
+<style type="text/css"></style></head>
 
-<body>
+<body style="background:#333333">
   <!--NAV BAR-->
   <nav class="nav-extended">
     <div class="nav-wrapper">
@@ -115,7 +113,7 @@
         <li class="tab"><a href="#news">News</a></li>
         <li class="tab"><a href="#test3">Disabled Tab</a></li>
         <li class="tab"><a href="#test4">Test 4</a></li>
-      </ul>
+      <li class="indicator" style="left: 0px; right: 1066px;"></li></ul>
     </div>
   </nav>
   <ul class="sidenav" id="nav-mobile">
@@ -125,19 +123,28 @@
   </ul>
   
   <!--GAMES TAB-->
-  <div id="games" class="col s12">
+  <div id="games" class="col s12 active">
     <iframe frameborder="0" src="https://itch.io/embed/550993?bg_color=ffffff&amp;link_color=cc0000" width="100%" height="167"><a href="https://eduapps.itch.io/vendetta">Vendetta by EduApps</a></iframe>
   </div>
+<center>
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="AC44X3D94K8NL">
+<input type="hidden" name="item_name" value="develop more incredible tools">
+<input type="hidden" name="currency_code" value="BRL">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+<img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   
   <!--NEWS TAB-->
-  <div id="news" class="col s12">
-    <ul id="news-content" class="collection">
-    </ul>
+  <div id="news" class="col s12" style="display: none;">
+    <ul id="news-content" class="collection">a undefined</ul>
   </div>
-  <div id="test3" class="col s12">Test 3</div>
-  <div id="test4" class="col s12">Test 4</div>
+  <div id="test3" class="col s12" style="display: none;">Test 3</div>
+  <div id="test4" class="col s12" style="display: none;">Test 4</div>
   
-  <!--div class="main">
+  <div class="main">
     <center>
       <codersrank-widget username="eduapps-cdg"></codersrank-widget>
       <div class="fb-like" data-share="true" data-width="450" data-colorscheme="dark" data-show-faces="true"></div>
@@ -145,7 +152,7 @@
       </div>
       <div class="fb-comments" data-href="https://eduapps-cdg.github.io" data-colorscheme="dark" data-order-by="time" data-width="50%" data-numposts="10"></div>
     </center>
-  </div-->
+  </div>
 	<script src="js/eduapps.js"></script>
 	
   <script src="https://profile.codersrank.io/widget/widget.js"></script>
@@ -160,6 +167,6 @@
       }
     );
   //}
-  </script>
-</body>
-</html>
+  </script><div class="sidenav-overlay"></div><div class="drag-target"></div>
+
+</body></html>
